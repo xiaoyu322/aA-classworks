@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial;
+    background-color: wheat;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+header > img {
+    width: 100px;
+}
+
+ul li a {
+    text-decoration: rgb(6, 63, 63);
+    color: inherit;
+}
+
+.ingredients_list {
+    list-style: square inside;
+    color: darkcyan;
+}
+
+ol {
+    list-style: upper-roman inside;
+}
+
+
