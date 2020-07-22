@@ -1,0 +1,59 @@
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-nav > ul > li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.right-nav > ul > li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.right-nav > ul > li:last-of-type {
+    position: relative;
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+    // background-color: $light_gray;
+}
+
+.left-nav > ul > li > span {
+    padding: 5px;
+    font-size: 13px;
+}
+
+.right-nav > ul > li > span {
+    background-color: $light_blue;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.left-nav > ul > li > span:hover {
+    background-color: $dark_gray;
+}
+
+.right-nav > ul > li > span:hover {
+    background-color: $dark_blue;
+}
+
+.left-nav li:first-child {
+    position: relative;
+}
+
+
+.right-nav i {
+
+}

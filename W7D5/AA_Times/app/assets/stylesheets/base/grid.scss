@@ -1,0 +1,143 @@
+.col {
+  // ...
+}
+
+/* Attribute selector targeting all elements
+with a class attribute containing 'col-' */
+[class*='col-'] {
+  // ...
+}
+
+[class*='col-']:last-of-type {
+  // ...
+}
+
+@media all and (max-width: 1000px) {
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100px;
+  }
+
+  .middle iframe{
+    width: 480px;
+  }
+
+  .inner-right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-content {
+  display: flex;
+  // flex-wrap: wrap;
+  min-width: 100px;
+}
+
+.main-content .left-side {
+  // border: 5px solid black;
+  // background: red;
+  max-width: 400px;
+  margin: 10px auto;
+
+  // float: initial;  // this does literally nothing
+}
+
+.main-content .middle {
+  // background-color: greenyellow;
+  max-width: 560px;
+}
+
+.main-content .right-side {
+  max-width: 500px;
+  // background: orange;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-content .right-side h1 {
+  font-size: 13px;
+}
+
+.right-side .inner-right {
+  justify-content: initial;
+  // border: 3px solid red;
+  display: flex;
+  // flex-wrap: wrap;
+
+}
+
+.right-side li{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.main-content .right-side a {
+  align-self: center;
+  font-size: 10px;
+  color: $light-gray;
+}
+
+.right-side input {
+  // width: 300px;
+}
+
+.right-side button {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: $light-blue;
+  border: 3px solid $blue;
+}
+
+.main-content .right-side h2{
+  font-size: 15px;
+}
+
+.main-content div {
+  padding-bottom: 10px;
+}
+
+.main-content .left-side li {
+  // width: 300px;
+  // flex: left;
+  // background-color: $light-blue;
+  font-size: 13px;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 10px;
+}
+
+
+.main-content .gray-text {
+  color: grey;
+  font-size: 11px;
+  padding-bottom: 5px;
+}
+
+.inner-right ul {
+  // width: 220px;
+  padding: 15px;
+  font-size: 11px;
+}
+
+#givemeauthority {
+  color: grey;
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
+.main-content h1:hover, .main-content a:hover {
+  text-decoration: underline;
+}
+
+.right-side button:hover {
+  background-color: $dark-blue;
+  border: 3px solid $darkest-blue;
+}
+
+.main-content a {
+  color: blue;
+}
