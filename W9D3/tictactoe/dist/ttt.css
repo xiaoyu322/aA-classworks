@@ -1,0 +1,54 @@
+/* .ttt {
+    display: flex;
+    width: 50px; 
+    flex-wrap: wrap;
+    color: green;
+} */
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto; 
+    width: 300px; 
+    border: 5px solid black;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; 
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; */
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    float: left; 
+    height: 90px;
+    width: 90px; 
+    border: 5px solid black; 
+    background-color: gray;
+    cursor: pointer;
+    display: list-item;
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+.x, .o{
+    background-color: white;
+}
+
+.o:after {
+    content: "O";
+    font-size: 60px; 
+    display: block;
+    width: 100%;
+}
+
+.x:after {
+    content: "X";
+    font-size: 60px; 
+    display: block;
+    width: 100%;
+}
+
