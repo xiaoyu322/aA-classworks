@@ -1,0 +1,17 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#inside-div {
+    border: 2px solid black;
+    display: block;
+    background-color: orange;
+}
+
+#time, #date {
+    display: inline-block;
+}
+
+#time-title, #date-title {
+    float: left;
+}
